@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>	
+	<style type="text/css">
+		.thum{height: 100px; opacity: 0.3}
+		.thum:hover{opacity: 1;}
+
+	</style>
+</head>
+<body>
+	<img src="ak.gif" class="thum" id="a">
+	<img src="akkk.gif" class="thum" id="b">
+	<img src="bye.gif" class="thum" id="c">
+	<img src="sp.png" class="thum" id="d">
+	<img src="toong.jpeg" class="thum" id="e">
+
+	<audio src="ak.mp4" id="aa" loop></audio>
+	<audio src="akkk.mp4" id="bb" loop></audio>
+	<audio src="bye.mp4" id="cc" loop></audio>
+	<audio src="sp.mp4" id="dd" loop></audio>
+	<audio src="toong.mp4" id="ee" loop></audio>
+
+	<script type="text/javascript">
+	
+	var astate = "off";
+	aa.volume = 0.4;
+	a.onclick = function(){
+		if(astate == "off"){aa.play(); astate="on"; a.style.opacity = "1";}
+		else{aa.pause(); astate="off"; a.style.opacity = "0.3";}
+	}
+
+
+	var bstate = "off";
+	bb.volume = 0.4;
+	b.onclick = function(){
+		if(bstate == "off"){bb.play(); bstate="on"; b.style.opacity = "1";}
+		else{bb.pause(); bstate="off"; b.style.opacity = "0.3";}
+	}
+
+
+	var cstate = "off";
+	cc.volume = 0.25;
+	c.onclick = function(){
+		if(cstate == "off"){cc.play(); cstate="on"; c.style.opacity = "1";}
+		else{cc.pause(); cstate="off"; c.style.opacity = "0.3";}
+	}
+
+
+	var dstate = "off";
+	d.onclick = function(){
+		if(dstate == "off"){dd.play(); dstate="on"; d.style.opacity = "1";}
+		else{dd.pause(); dstate="off"; d.style.opacity = "0.3";}
+	}
+
+
+	var estate = "off";
+	e.onclick = function(){
+		if(estate == "off"){ee.play(); estate="on"; e.style.opacity = "1";}
+		else{ee.pause(); estate="off"; e.style.opacity = "0.3";}
+	}
+
+			
+		
+	</script>
+
+</body>
+</html>
+
+
